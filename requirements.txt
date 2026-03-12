@@ -1,0 +1,10 @@
+langchain
+langchain-core
+langchain-ollama
+langgraph
+datasets
+pydantic
+numpy
+
+langchain-openai
+python-dotenv
