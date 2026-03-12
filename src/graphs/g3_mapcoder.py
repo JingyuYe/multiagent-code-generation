@@ -16,17 +16,20 @@ def should_continue(state: TaskState):
         
     return "Planner"
 
-def build_g3_mapcoder(effort_level: int = 1):
+def build_g3_mapcoder(effort_profile: dict = None):
     """
     G3: MapCoder-Style Cycle. Retrieval-planning-coding-debugging under a fixed budget.
     We simulate this by cycling back to the Planner upon failure: P -> C -> R -> T -> P...
     """
+    if effort_profile is None:
+        effort_profile = {"planner": 1, "coder": 1, "reviewer": 1, "tester": 1}
+
     builder = StateGraph(TaskState)
     
-    planner = PlannerNode(effort_level)
-    coder = CoderNode(effort_level)
-    reviewer = ReviewerNode(effort_level)
-    tester = TesterNode(effort_level)
+    planner = PlannerNode(effort_profile.get("planner", 1))
+    coder = CoderNode(effort_profile.get("coder", 1))
+    reviewer = ReviewerNode(effort_profile.get("reviewer", 1))
+    tester = TesterNode(effort_profile.get("tester", 1))
     
     builder.add_node("Planner", planner)
     builder.add_node("Coder", coder)

@@ -15,16 +15,19 @@ def should_continue(state: TaskState):
         
     return "Coder"
 
-def build_g2_agentcoder(effort_level: int = 1):
+def build_g2_agentcoder(effort_profile: dict = None):
     """
     G2: AgentCoder-Style Loop. Iterative code-test-revise until tests pass or budget exhausted.
     Task -> PL -> C <---> T
     """
+    if effort_profile is None:
+        effort_profile = {"planner": 1, "coder": 1, "tester": 1}
+
     builder = StateGraph(TaskState)
     
-    planner = PlannerNode(effort_level)
-    coder = CoderNode(effort_level)
-    tester = TesterNode(effort_level)
+    planner = PlannerNode(effort_profile.get("planner", 1))
+    coder = CoderNode(effort_profile.get("coder", 1))
+    tester = TesterNode(effort_profile.get("tester", 1))
     
     builder.add_node("Planner", planner)
     builder.add_node("Coder", coder)

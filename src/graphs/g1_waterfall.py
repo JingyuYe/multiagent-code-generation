@@ -5,17 +5,20 @@ from src.agents.coder import CoderNode
 from src.agents.reviewer import ReviewerNode
 from src.agents.tester import TesterNode
 
-def build_g1_waterfall(effort_level: int = 1):
+def build_g1_waterfall(effort_profile: dict = None):
     """
     G1: Waterfall Pipeline. Sequential PL -> C -> R -> T with minimal feedback.
     """
+    if effort_profile is None:
+        effort_profile = {"planner": 1, "coder": 1, "reviewer": 1, "tester": 1}
+
     builder = StateGraph(TaskState)
     
     # Instantiate agents at specified effort level
-    planner = PlannerNode(effort_level)
-    coder = CoderNode(effort_level)
-    reviewer = ReviewerNode(effort_level)
-    tester = TesterNode(effort_level)
+    planner = PlannerNode(effort_profile.get("planner", 1))
+    coder = CoderNode(effort_profile.get("coder", 1))
+    reviewer = ReviewerNode(effort_profile.get("reviewer", 1))
+    tester = TesterNode(effort_profile.get("tester", 1))
     
     # Add nodes
     builder.add_node("Planner", planner)
