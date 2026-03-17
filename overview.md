@@ -10,12 +10,12 @@ The system retrieves tasks strictly from the **Mostly Basic Programming Problems
 
 ## 2. Model & Inference Engine
 We manage LLM inference centrally to enforce strict effort constraints.
-- **Model**: OpenAI's `gpt-4o`.
+- **Model**: Ollama's local `qwen2.5-coder:7b`. We use this model because it natively executes entirely on 16GB unified memory Macs while scoring competitively against GPT-4 on MBPP metrics, avoiding Out-of-Memory crashes or page-outs. 
 - **Implementation Location**: `src/core/model.py`.
 - **Effort Constraints ($e \in \{1, \dots, n\}$)**: 
   - Effort is not fine-tuned into the model. Instead, it is constrained at the inference stage. 
-  - **High Effort ($e=1$)**: Granted to a generous generation constraint (`max_tokens: 1024`) and slightly higher temperature (`0.6`) for reasoning elasticity.
-  - **Low Effort ($e=0$)**: Severely constrained generation (`max_tokens: 256`) and deterministic greedy decoding (`temperature: 0.0`), forcing zero-shot "guess" behaviors.
+  - **High Effort ($e=1$)**: Granted a generous generation constraint (`num_predict: 2048`) and slightly higher temperature (`0.6`) for reasoning elasticity.
+  - **Low Effort ($e=0$)**: Severely constrained generation (`num_predict: 256`) and deterministic greedy decoding (`temperature: 0.0`), forcing zero-shot "guess" behaviors.
 
 ## 3. The Orchestration Framework (LangGraph)
 We model interaction through LangGraph `StateGraphs`. Every agent is a Node and shares a universally accessible memory ledger `TaskState` defined in `src/core/state.py`.

@@ -12,10 +12,11 @@ This project evaluates how different interaction graph structures in multi-agent
    pip install -r requirements.txt
    ```
 
-2. **Configure API Keys:**
-   This project relies on OpenAI's `gpt-4o`. Ensure you have an active `.env` file in the root directory:
-   ```env
-   OPENAI_API_KEY=your_key_here
+2. **Configure Local Model Infrastructure:**
+   This project relies on the ultra-powerful 7B coder from Alibaba running locally. Start the Ollama daemon and pull the model:
+   ```bash
+   brew services start ollama
+   ollama pull qwen2.5-coder:7b
    ```
 
 3. **Verify Installation:**
