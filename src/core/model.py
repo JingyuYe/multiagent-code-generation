@@ -14,12 +14,28 @@ def get_llm(effort_level: int = 1) -> BaseChatModel:
     """
     model_name = "qwen2.5-coder:7b"
     
+    # We add a strict timeout and hard stop sequences so the server never hangs.
+    base_kwargs = {
+        "model": model_name,
+        "timeout": 120, # Kill the socket if it hangs for 2 minutes
+        "stop": ["<|im_end|>", "```\n\n"] # Let it finish code blocks, then force stop
+    }
+    
     if effort_level == 1:
-        # High effort: more tokens, slightly higher temperature to encourage exploration
-        return ChatOllama(model=model_name, temperature=0.6, num_predict=2048)
+        # High effort: full exploration capabilities
+        return ChatOllama(
+            **base_kwargs, 
+            temperature=0.6, 
+            num_predict=2048
+        )
     else:
-        # Low effort: constrained generation, greedy decoding
-        return ChatOllama(model=model_name, temperature=0.0, num_predict=256)
+        # Low effort: Force it to return garbage quickly using temperature 0.0
+        # By giving it 512 tokens but a strict stop sequence, it fails gracefully.
+        return ChatOllama(
+            **base_kwargs, 
+            temperature=0.0, 
+            num_predict=512
+        )
 
 def get_system_prompt_modifier(effort_level: int) -> str:
     """
@@ -28,4 +44,5 @@ def get_system_prompt_modifier(effort_level: int) -> str:
     if effort_level == 1:
         return "\n\nThink step-by-step, consider 3 edge cases, and rigorously double check your logic."
     else:
-        return "\n\nProvide a quick, concise answer. Generate the direct result without explanation."
+        # Use the prompt to simulate low effort instead of just cutting the token limit
+        return "\n\nYou are extremely lazy. Provide the absolute bare minimum, poorly structured code. Do not write docstrings or explanations."

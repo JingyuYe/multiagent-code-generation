@@ -43,7 +43,7 @@ def run_all_experiments():
     import random
     random.seed(42)
     
-    num_tasks = 20
+    num_tasks = 2
     console.print(f"Loading and sampling {num_tasks} tasks with varied difficulty from MBPP Sanitzed dataset...")
     full_dataset = load_dataset("mbpp", "sanitized", split="test")
     
@@ -51,11 +51,8 @@ def run_all_experiments():
     sorted_dataset = sorted(list(full_dataset), key=lambda x: len(x.get('prompt', '')))
     
     if len(sorted_dataset) >= num_tasks:
-        hard = int(num_tasks * 0.6)
-        med = int(num_tasks * 0.2)
-        easy = num_tasks - hard - med
-        # Biased sample: 60% hardest, 20% median, 20% easiest
-        dataset = sorted_dataset[-hard:] + sorted_dataset[len(sorted_dataset)//2 - med//2 : len(sorted_dataset)//2 - med//2 + med] + sorted_dataset[:easy]
+        # Biased sample for 2 tasks: 1 hardest, 1 easiest
+        dataset = sorted_dataset[-1:] + sorted_dataset[:1]
         random.shuffle(dataset)
     else:
         dataset = sorted_dataset
@@ -130,7 +127,7 @@ def run_all_experiments():
                 graph_results.append(result_obj)
                 
                 # Stream intermediate results to disk safely
-                raw_results_file = Path("data/raw_results.jsonl")
+                raw_results_file = Path("data/raw_results_smol.jsonl")
                 raw_results_file.parent.mkdir(exist_ok=True)
                 with open(raw_results_file, "a") as f:
                     f.write(json.dumps(result_obj) + "\n")
@@ -154,7 +151,7 @@ def run_all_experiments():
             }
 
     # Export to CSV
-    csv_file = Path("data/results.csv")
+    csv_file = Path("data/results_smol.csv")
     csv_file.parent.mkdir(exist_ok=True)
     with open(csv_file, "w") as f:
         f.write("Topology,Pass_Rate,Avg_Tokens,Nash_Stability\n")

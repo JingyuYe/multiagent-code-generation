@@ -1,0 +1,113 @@
+/Users/json/multiagent-code-generation/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+🚀 Starting Comprehensive Multi-Agent Topology Experiments
+Loading and sampling 20 tasks with varied difficulty from MBPP Sanitzed dataset...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Evaluating Topology: G0: Baseline (0-shot)
+  Task MBPP-71: Base Run (universal_agent: 1)
+  Task MBPP-255: Base Run (universal_agent: 1)
+  Task MBPP-425: Base Run (universal_agent: 1)
+  Task MBPP-291: Base Run (universal_agent: 1)
+  Task MBPP-223: Base Run (universal_agent: 1)
+  Task MBPP-390: Base Run (universal_agent: 1)
+  Task MBPP-429: Base Run (universal_agent: 1)
+  Task MBPP-307: Base Run (universal_agent: 1)
+  Task MBPP-245: Base Run (universal_agent: 1)
+  Task MBPP-443: Base Run (universal_agent: 1)
+  Task MBPP-127: Base Run (universal_agent: 1)
+  Task MBPP-239: Base Run (universal_agent: 1)
+  Task MBPP-277: Base Run (universal_agent: 1)
+  Task MBPP-229: Base Run (universal_agent: 1)
+  Task MBPP-165: Base Run (universal_agent: 1)
+  Task MBPP-426: Base Run (universal_agent: 1)
+  Task MBPP-262: Base Run (universal_agent: 1)
+  Task MBPP-280: Base Run (universal_agent: 1)
+  Task MBPP-283: Base Run (universal_agent: 1)
+  Task MBPP-306: Base Run (universal_agent: 1)
+
+Evaluating Topology: G1: Waterfall (Linear)
+  Task MBPP-71: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-71: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-71: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-71: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-71: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-255: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-255: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-255: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-255: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-255: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-425: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-425: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-425: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-425: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-425: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-291: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-291: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-291: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-291: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-291: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-223: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-223: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-223: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-223: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-223: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-390: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-390: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-390: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-390: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-390: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-429: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-429: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-429: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-429: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-429: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-307: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-307: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-307: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-307: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-307: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-245: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-245: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-245: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-245: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-245: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-443: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-443: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-443: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-443: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-443: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-127: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-127: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-127: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-127: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-127: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-239: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-239: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-239: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-239: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-239: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-277: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-277: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-277: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-277: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-277: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-229: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-229: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-229: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-229: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-229: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-165: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-165: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-165: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-165: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-165: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-426: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-426: Deviation Run {'planner': 0, 'coder': 1, 'reviewer': 1, 'tester': 1}
+  Task MBPP-426: Deviation Run {'planner': 1, 'coder': 0, 'reviewer': 1, 'tester': 1}
+  Task MBPP-426: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 0, 'tester': 1}
+  Task MBPP-426: Deviation Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 0}
+  Task MBPP-262: Base Run {'planner': 1, 'coder': 1, 'reviewer': 1, 'tester': 1}
+/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

@@ -1,9 +1,35 @@
 
-🚀 Starting Comprehensive Multi-Agent 
-Topology Experiments
-Loading 3 tasks from MBPP Sanitzed 
-dataset...
+🚀 Starting Comprehensive Multi-Agent Topology Experiments
+Loading 256 tasks from MBPP Sanitzed dataset...
 
 Evaluating Topology: G0: Baseline (0-shot)
 
 Evaluating Topology: G1: Waterfall (Linear)
+Error on MBPP-74: peer closed connection without sending complete Error on MBPP-77: [Errno 61] Connection refused
+Error on MBPP-79: [Errno 61] Connection refused
+Error on MBPP-80: [Errno 61] Connection refused
+Error on MBPP-82: [Errno 61] Connection refused
+Error on MBPP-83: [Errno 61] Connection refused
+Error on MBPP-84: peer closed connectionError on MBPP-83: Server disconnected without sending a response.
+Error on MBPP-84: [Errno 61] Connection refused
+angchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+Error on MBPP-12: Recursion limit of 10 reached without hitting a stop condition. You can increase the limit 
+by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+Error on MBPP-14: Recursion limit of 10 reached without hitting a stop condition. You can increase the limit 
+by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+
+==== FINAL COMPREHENSIVE EXPERIMENT RESULTS ====
+                             Topology Performance Matrix (MBPP)                             
+┏━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Topology Configuration ┃ Pass@1 Accuracy ┃ Average Token Cost ┃ Nash Incentive Stability ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ G0: Baseline (0-shot)  │      0.0%       │         60         │          100.0%          │
+│ G1: Waterfall (Linear) │     100.0%      │        1563        │          100.0%          │
+│ G2: AgentCoder (Loop)  │      66.7%      │        1241        │          100.0%          │
+│ G3: MapCoder (Cycle)   │     100.0%      │        1825        │          100.0%          │
+│ G4: Parallel Judge     │      66.7%      │        795         │          100.0%          │
+│ G5: Adversarial Debate │      66.7%      │        792         │          100.0%          │
+│ G6: Hierarchical Setup │      0.0%       │        281         │          100.0%          │
+└────────────────────────┴─────────────────┴────────────────────┴──────────────────────────┘
