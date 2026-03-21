@@ -94,7 +94,7 @@ def run_all_experiments():
                     graph = builder_func(effort_profile=base_profile)
                     console.print(f"  [cyan]Task {task_id}: Base Run {base_profile}[/cyan]")
                 
-                base_state = graph.invoke(create_task_input(task_id, prompt, tests), config={"recursion_limit": 10})
+                base_state = graph.invoke(create_task_input(task_id, prompt, tests), config={"recursion_limit": 50})
                 base_pass = base_state.get('test_passed', False)
                 base_tokens = base_state.get('token_usage', {})
                 base_utils = calculate_utility(base_pass, base_tokens, value_of_success=100.0, lambda_cost=0.01)
@@ -107,7 +107,7 @@ def run_all_experiments():
                         dev_profile[agent] = 0
                         console.print(f"  [magenta]Task {task_id}: Deviation Run {dev_profile}[/magenta]")
                         graph_dev = builder_func(effort_profile=dev_profile)
-                        dev_state = graph_dev.invoke(create_task_input(task_id, prompt, tests), config={"recursion_limit": 10})
+                        dev_state = graph_dev.invoke(create_task_input(task_id, prompt, tests), config={"recursion_limit": 50})
                         dev_pass = dev_state.get('test_passed', False)
                         dev_tokens = dev_state.get('token_usage', {})
                         dev_u = calculate_utility(dev_pass, dev_tokens, value_of_success=100.0, lambda_cost=0.01)
