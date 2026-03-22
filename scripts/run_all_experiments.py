@@ -43,7 +43,7 @@ def run_all_experiments():
     import random
     random.seed(42)
     
-    num_tasks = 20
+    num_tasks = 10
     console.print(f"Loading and sampling {num_tasks} tasks with varied difficulty from MBPP Sanitzed dataset...")
     full_dataset = load_dataset("mbpp", "sanitized", split="test")
     
@@ -97,7 +97,7 @@ def run_all_experiments():
                     graph = builder_func(effort_profile=base_profile)
                     console.print(f"  [cyan]Task {task_id}: Base Run {base_profile}[/cyan]")
                 
-                base_state = graph.invoke(create_task_input(task_id, prompt, tests), config={"recursion_limit": 10})
+                base_state = graph.invoke(create_task_input(task_id, prompt, tests), config={"recursion_limit": 50})
                 base_pass = base_state.get('test_passed', False)
                 base_tokens = base_state.get('token_usage', {})
                 base_utils = calculate_utility(base_pass, base_tokens, value_of_success=100.0, lambda_cost=0.01)
@@ -110,7 +110,7 @@ def run_all_experiments():
                         dev_profile[agent] = 0
                         console.print(f"  [magenta]Task {task_id}: Deviation Run {dev_profile}[/magenta]")
                         graph_dev = builder_func(effort_profile=dev_profile)
-                        dev_state = graph_dev.invoke(create_task_input(task_id, prompt, tests), config={"recursion_limit": 10})
+                        dev_state = graph_dev.invoke(create_task_input(task_id, prompt, tests), config={"recursion_limit": 50})
                         dev_pass = dev_state.get('test_passed', False)
                         dev_tokens = dev_state.get('token_usage', {})
                         dev_u = calculate_utility(dev_pass, dev_tokens, value_of_success=100.0, lambda_cost=0.01)
@@ -136,8 +136,22 @@ def run_all_experiments():
                     f.write(json.dumps(result_obj) + "\n")
                 
             except Exception as e:
-                # Add print statement to easily spot timeout or parsing errors
                 console.print(f"[red]Error on {task_id}: {e}[/red]")
+
+                failed_result = {
+                    "topology": graph_name,
+                    "task_id": task_id,
+                    "passed": False,
+                    "tokens": 0,
+                    "stability": {role: False for role in roles},
+                    "error": str(e),
+                }
+                graph_results.append(failed_result)
+
+                raw_results_file = Path("data/raw_results.jsonl")
+                raw_results_file.parent.mkdir(exist_ok=True)
+                with open(raw_results_file, "a") as f:
+                    f.write(json.dumps(failed_result) + "\n")
         
         if len(graph_results) > 0:
             pass_rate = sum(1 for r in graph_results if r["passed"]) / len(graph_results)
