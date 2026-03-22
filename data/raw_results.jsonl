@@ -39,3 +39,83 @@
 {"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-229", "passed": false, "tokens": 647, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
 {"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-165", "passed": false, "tokens": 1122, "stability": {"planner": false, "coder": false, "reviewer": false, "tester": false}}
 {"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-426", "passed": false, "tokens": 662, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-425", "passed": false, "tokens": 91, "stability": {"universal_agent": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-223", "passed": false, "tokens": 227, "stability": {"universal_agent": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-280", "passed": false, "tokens": 180, "stability": {"universal_agent": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-426", "passed": false, "tokens": 171, "stability": {"universal_agent": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-229", "passed": false, "tokens": 221, "stability": {"universal_agent": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-390", "passed": false, "tokens": 77, "stability": {"universal_agent": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-127", "passed": false, "tokens": 9, "stability": {"universal_agent": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-239", "passed": false, "tokens": 94, "stability": {"universal_agent": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-245", "passed": false, "tokens": 198, "stability": {"universal_agent": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-262", "passed": false, "tokens": 53, "stability": {"universal_agent": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-425", "passed": false, "tokens": 1237, "stability": {"planner": true, "coder": false, "reviewer": false, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-223", "passed": false, "tokens": 1256, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-280", "passed": true, "tokens": 902, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-426", "passed": false, "tokens": 859, "stability": {"planner": true, "coder": false, "reviewer": true, "tester": false}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-229", "passed": false, "tokens": 1274, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-390", "passed": false, "tokens": 795, "stability": {"planner": false, "coder": false, "reviewer": true, "tester": false}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-127", "passed": false, "tokens": 224, "stability": {"planner": false, "coder": false, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-239", "passed": false, "tokens": 1482, "stability": {"planner": true, "coder": false, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-245", "passed": true, "tokens": 1427, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-262", "passed": false, "tokens": 728, "stability": {"planner": false, "coder": false, "reviewer": false, "tester": false}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-425", "passed": false, "tokens": 1330, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-223", "passed": false, "tokens": 2056, "stability": {"planner": true, "coder": false, "tester": false}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-280", "passed": true, "tokens": 664, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-426", "passed": true, "tokens": 837, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-229", "passed": false, "tokens": 2106, "stability": {"planner": true, "coder": true, "tester": false}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-390", "passed": true, "tokens": 724, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-127", "passed": true, "tokens": 1113, "stability": {"planner": true, "coder": true, "tester": false}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-239", "passed": false, "tokens": 2541, "stability": {"planner": true, "coder": true, "tester": false}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-245", "passed": false, "tokens": 2424, "stability": {"planner": true, "coder": false, "tester": false}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-262", "passed": true, "tokens": 681, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-425", "passed": false, "tokens": 3123, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-223", "passed": false, "tokens": 4262, "stability": {"planner": false, "coder": false, "reviewer": false, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-280", "passed": true, "tokens": 1177, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-426", "passed": true, "tokens": 2283, "stability": {"planner": true, "coder": true, "reviewer": false, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-229", "passed": false, "tokens": 3617, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-390", "passed": false, "tokens": 3281, "stability": {"planner": false, "coder": false, "reviewer": false, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-127", "passed": true, "tokens": 1003, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-239", "passed": false, "tokens": 4067, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-245", "passed": false, "tokens": 3717, "stability": {"planner": false, "coder": false, "reviewer": false, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-262", "passed": true, "tokens": 1030, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-425", "passed": false, "tokens": 274, "stability": {"planner": true, "coder": true, "judge": true, "tester": false}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-223", "passed": false, "tokens": 638, "stability": {"planner": true, "coder": true, "judge": false, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-280", "passed": false, "tokens": 648, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-426", "passed": false, "tokens": 416, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-229", "passed": false, "tokens": 498, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-390", "passed": false, "tokens": 378, "stability": {"planner": true, "coder": false, "judge": true, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-127", "passed": false, "tokens": 192, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-239", "passed": false, "tokens": 440, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-245", "passed": false, "tokens": 562, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-262", "passed": false, "tokens": 671, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-425", "passed": false, "tokens": 525, "stability": {"planner": true, "coder": true, "red_team": true, "blue_team": true, "tester": true}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-223", "passed": false, "tokens": 574, "stability": {"planner": true, "coder": false, "red_team": true, "blue_team": true, "tester": true}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-280", "passed": false, "tokens": 709, "stability": {"planner": false, "coder": false, "red_team": false, "blue_team": false, "tester": false}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-426", "passed": false, "tokens": 530, "stability": {"planner": true, "coder": false, "red_team": false, "blue_team": true, "tester": true}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-229", "passed": false, "tokens": 971, "stability": {"planner": true, "coder": true, "red_team": true, "blue_team": true, "tester": true}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-390", "passed": false, "tokens": 489, "stability": {"planner": false, "coder": true, "red_team": true, "blue_team": true, "tester": false}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-127", "passed": false, "tokens": 439, "stability": {"planner": false, "coder": false, "red_team": false, "blue_team": false, "tester": true}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-239", "passed": false, "tokens": 1205, "stability": {"planner": true, "coder": true, "red_team": true, "blue_team": true, "tester": true}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-245", "passed": false, "tokens": 851, "stability": {"planner": true, "coder": true, "red_team": true, "blue_team": true, "tester": true}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-262", "passed": true, "tokens": 708, "stability": {"planner": true, "coder": true, "red_team": true, "blue_team": true, "tester": true}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-425", "passed": false, "tokens": 236, "stability": {"manager": false, "worker": false, "aggregator": false, "tester": false}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-223", "passed": false, "tokens": 286, "stability": {"manager": true, "worker": true, "aggregator": true, "tester": true}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-280", "passed": false, "tokens": 154, "stability": {"manager": true, "worker": true, "aggregator": true, "tester": true}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-426", "passed": true, "tokens": 384, "stability": {"manager": true, "worker": true, "aggregator": true, "tester": true}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-229", "passed": false, "tokens": 217, "stability": {"manager": true, "worker": true, "aggregator": true, "tester": true}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-390", "passed": false, "tokens": 192, "stability": {"manager": true, "worker": true, "aggregator": false, "tester": true}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-127", "passed": false, "tokens": 98, "stability": {"manager": false, "worker": false, "aggregator": false, "tester": false}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-239", "passed": false, "tokens": 95, "stability": {"manager": true, "worker": true, "aggregator": true, "tester": true}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-245", "passed": false, "tokens": 468, "stability": {"manager": true, "worker": true, "aggregator": true, "tester": true}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-262", "passed": true, "tokens": 315, "stability": {"manager": true, "worker": true, "aggregator": true, "tester": true}}
+{"topology": "G7: Mental Simulator", "task_id": "MBPP-425", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
+{"topology": "G7: Mental Simulator", "task_id": "MBPP-223", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
+{"topology": "G7: Mental Simulator", "task_id": "MBPP-280", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
+{"topology": "G7: Mental Simulator", "task_id": "MBPP-426", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
+{"topology": "G7: Mental Simulator", "task_id": "MBPP-229", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
+{"topology": "G7: Mental Simulator", "task_id": "MBPP-390", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
+{"topology": "G7: Mental Simulator", "task_id": "MBPP-127", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
+{"topology": "G7: Mental Simulator", "task_id": "MBPP-239", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
+{"topology": "G7: Mental Simulator", "task_id": "MBPP-245", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
+{"topology": "G7: Mental Simulator", "task_id": "MBPP-262", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
