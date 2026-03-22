@@ -119,3 +119,23 @@
 {"topology": "G7: Mental Simulator", "task_id": "MBPP-239", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
 {"topology": "G7: Mental Simulator", "task_id": "MBPP-245", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
 {"topology": "G7: Mental Simulator", "task_id": "MBPP-262", "passed": false, "tokens": 0, "stability": {"planner": false, "coder": false, "simulator": false, "tester": false}, "error": "Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.\nFor troubleshooting, visit: https://docs.langchain.com/oss/python/langgraph/errors/GRAPH_RECURSION_LIMIT"}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-425", "passed": true, "tokens": 494, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-223", "passed": false, "tokens": 1956, "stability": {"planner": true, "coder": true, "tester": false}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-280", "passed": true, "tokens": 657, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-426", "passed": false, "tokens": 1300, "stability": {"planner": false, "coder": false, "tester": false}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-229", "passed": false, "tokens": 2028, "stability": {"planner": true, "coder": false, "tester": false}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-390", "passed": false, "tokens": 2022, "stability": {"planner": false, "coder": false, "tester": false}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-127", "passed": true, "tokens": 762, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-239", "passed": true, "tokens": 947, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-245", "passed": false, "tokens": 1559, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-262", "passed": true, "tokens": 830, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-425", "passed": false, "tokens": 2178, "stability": {"planner": true, "coder": false, "tester": true, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-223", "passed": false, "tokens": 3067, "stability": {"planner": true, "coder": false, "tester": false, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-280", "passed": true, "tokens": 805, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-426", "passed": false, "tokens": 2285, "stability": {"planner": true, "coder": false, "tester": false, "reviewer": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-229", "passed": true, "tokens": 1479, "stability": {"planner": true, "coder": true, "tester": true, "reviewer": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-390", "passed": false, "tokens": 2175, "stability": {"planner": false, "coder": false, "tester": false, "reviewer": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-127", "passed": false, "tokens": 1127, "stability": {"planner": false, "coder": false, "tester": false, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-239", "passed": false, "tokens": 2256, "stability": {"planner": true, "coder": false, "tester": true, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-245", "passed": true, "tokens": 784, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-262", "passed": true, "tokens": 662, "stability": {"planner": true, "coder": true, "tester": true}}

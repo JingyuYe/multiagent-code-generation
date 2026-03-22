@@ -13,6 +13,7 @@ from datasets import load_dataset
 from src.graphs.g0_baseline import build_g0_baseline
 from src.graphs.g1_waterfall import build_g1_waterfall
 from src.graphs.g2_agentcoder import build_g2_agentcoder
+from src.graphs.g2_5_reviewer_repair import build_g2_reviewer_repair
 from src.graphs.g3_mapcoder import build_g3_mapcoder
 from src.graphs.g4_parallel_judge import build_g4_parallel_judge
 from src.graphs.g5_adversarial_debate import build_g5_adversarial_debate
@@ -64,6 +65,7 @@ def run_all_experiments():
         "G0: Baseline (0-shot)": {"builder": build_g0_baseline, "roles": ["universal_agent"]},
         "G1: Waterfall (Linear)": {"builder": build_g1_waterfall, "roles": ["planner", "coder", "reviewer", "tester"]},
         "G2: AgentCoder (Loop)": {"builder": build_g2_agentcoder, "roles": ["planner", "coder", "tester"]},
+        "G2.5: Reviewer Repair": {"builder": build_g2_reviewer_repair, "roles": ["planner", "coder", "reviewer", "tester"]},
         "G3: MapCoder (Cycle)": {"builder": build_g3_mapcoder, "roles": ["planner", "coder", "reviewer", "tester"]},
         "G4: Parallel Judge": {"builder": build_g4_parallel_judge, "roles": ["planner", "coder", "judge", "tester"]},
         "G5: Adversarial Debate": {"builder": build_g5_adversarial_debate, "roles": ["planner", "coder", "red_team", "blue_team", "tester"]},
