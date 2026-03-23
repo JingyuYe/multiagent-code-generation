@@ -6,27 +6,54 @@ This project evaluates how different interaction graph structures in multi-agent
 
 1. **Clone and Setup Virtual Environment:**
    Run the following to initialize a clean python environment:
+
+   **Windows (PowerShell)**
+   ```PowerShell
+   py -m venv .venv
+   .venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+   **macOS / Linux**
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate
    pip install -r requirements.txt
    ```
 
-2. **Configure Local Model Infrastructure:**
+3. **Configure Local Model Infrastructure:**
    This project relies on the ultra-powerful 7B coder from Alibaba running locally. Start the Ollama daemon and pull the model:
+
+   **Windows (PowerShell)**
+   ```PowerShell
+   irm https://ollama.com/install.ps1 | iex
+   ollama pull qwen2.5-coder:7b
+   ```
+   **macOS / Linux**
    ```bash
    brew services start ollama
    ollama pull qwen2.5-coder:7b
    ```
 
-3. **Verify Installation:**
+5. **Verify Installation:**
    Run the baseline test snippet to verify the LangGraph agents can execute against the sandbox.
+
+   **Windows (PowerShell)**
+   ```PowerShell
+   py scripts/test_g0.py
+   ```
+   **macOS / Linux**
    ```bash
    python3 scripts/test_g0.py
    ```
 
-4. **Run MBPP Evaluation:**
+7. **Run MBPP Evaluation:**
    Execute a sample run against the HuggingFace MBPP dataset using the G3 MapCoder Cycle loop:
+
+   **Windows (PowerShell)**
+   ```PowerShell
+   py scripts/run_mbpp.py
+   ```
+   **macOS / Linux**
    ```bash
    python3 scripts/run_mbpp.py
    ```
