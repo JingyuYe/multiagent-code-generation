@@ -1,0 +1,8 @@
+Topology,Pass_Rate,Avg_Tokens,Nash_Stability
+"G0: Baseline (0-shot)","0.0%",75,"100.0%"
+"G1: Waterfall (Linear)","50.0%",1078,"50.0%"
+"G2: AgentCoder (Loop)","100.0%",753,"100.0%"
+"G3: MapCoder (Cycle)","100.0%",1991,"0.0%"
+"G4: Parallel Judge","0.0%",575,"0.0%"
+"G5: Adversarial Debate","50.0%",835,"50.0%"
+"G6: Hierarchical Setup","50.0%",444,"50.0%"

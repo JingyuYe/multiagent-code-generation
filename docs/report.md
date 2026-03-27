@@ -10,30 +10,28 @@ We expanded our LangGraph project to evaluate eight distinct Multi-Agent topolog
 5. **G4: Parallel Judge (Best-of-N)**: A Planner routes the task to three isolated parallel Coders. A `Judge` evaluates all three implementation strings and chooses the most robust output to send to the Tester.
 6. **G5: Adversarial Debate**: The Coder's generated script is critiqued by a "Red Team" whose only system prompt is to find vulnerabilities and edge-case breaks. A "Blue Team" must either rationally defend the code or patch it before execution.
 7. **G6: Hierarchical Setup**: A Logic Manager decomposes the task into JSON sub-tasks. Parallel Workers write fragmented python functions, and an Aggregator knits them into a single script.
-8. **G7: Mental Simulator**: An agent attempts to step-by-step mentally execute the Python variables during runtime without using the actual literal execution sandbox.
 
 ---
 
 ## 2. Experimental Findings (Interpolated Sweep)
 *Note: Executing a full 50-task scale across 8 topologies on a local 7B open-source model fundamentally scales to ~400 LLM inferences, consuming ~2 to 3 hours of local compute time based on MAC unified memory processing speeds. The evaluation loop is fully decoupled from Nash calculations in the scripts for speed.*
 
-| Topology | Expected Pass@1 Profile | Relative Token Cost ($T_i$) | Interpretive Behavior |
-| :--- | :--- | :--- | :--- |
-| **G0: Baseline** | 🚫 Low (~10-20%) | Extremely Low (~75) | Fast, cheap. Fundamentally fails on blind function-signature guesses. |
-| **G1: Waterfall** | ⚠️ Moderate (~35%) | Moderate (~550) | The Reviewer catches logical errors, but without literal runtime stacks, it guesses on edge cases. |
-| **G2: AgentCoder** | ✅ High (~85%) | High (~800) | The strict feedback loop of the compiler catching `NameErrors` forces the Coder to correctly format functions iteratively. |
-| **G3: MapCoder** | 🌟 Very High (~90%) | Very High (~1300) | Maximum robustness. Rebuilding the logical plan upon test failures fixes systemic code rot, rather than just patching errors. |
-| **G4: Parallel Judge** | ⚠️ Moderate (~45%) | High (~900) | The Judge frequently hallucinates or fails to distinguish the best candidate because it cannot execute them to verify. |
-| **G5: Adversarial Debate** | ✅ High (~80%) | Extreme (~1600+) | The Red Team successfully identifies logic holes that single-shot coders miss, but burns massive tokens generating critique texts. |
-| **G6: Hierarchical** | 🚫 Low (~15%) | Moderate (~450) | Breaks down completely on small MBPP logic puzzles because decomposing a 6-line math formula into subtasks overcomplicates the code. |
-| **G7: Mental Simulator** | ⛔ Fails (~0%) | Infinite Loop Risk | LLMs are notoriously bad at mentally stepping through numerical loops. Frequent false-positive critiques send it into infinite retry loops. |
+| Topology | GPT-5.4 Nano Pass@1 | Average Token Cost ($T_i$) | Nash Incentive Stability | Interpretive Behavior |
+| :--- | :--- | :--- | :--- | :--- |
+| **G0: Baseline** | 4.0% | 131 | 100.0% | Fast, cheap. Fundamentally fails on blind function-signature guesses without reflection. |
+| **G1: Waterfall** | 78.0% | 1105 | 90.0% | The Reviewer catches logical errors, but without literal runtime stacks, it guesses on edge cases. |
+| **G2: AgentCoder** | 84.0% | 987 | 78.0% | The strict feedback loop of the compiler catching errors forces the Coder to correctly format functions iteratively. |
+| **G3: MapCoder** | 86.0% | 1659 | 78.0% | Maximum robustness. Rebuilding the logical plan upon test failures fixes systemic code rot vs local patching. |
+| **G4: Parallel Judge** | 72.0% | 4717 | 74.0% | The Judge frequently hallucinates or fails to distinguish the best candidate because it cannot execute them to verify. |
+| **G5: Adversarial Debate** | 78.0% | 5506 | 26.0% | The Red Team successfully identifies logic holes that single-shot coders miss, but burns massive tokens. |
+| **G6: Hierarchical** | 75.5% | 7019 | 10.2% | Heavy multi-agent orchestration generates enormous context overhead, making Nash stability practically collapse. |
 
 ---
 
 ## 3. Analysis Interpretations
 
 ### A. The Supremacy of Literal Execution
-The single most powerful node in all topologies is the **execution sandbox**. Topologies that attempt to conceptually simulate or judge code using LLM logic (such as **G4: Judge**, **G5: Debate**, and **G7: Simulator**) burn thousands of tokens trying to reason through Python semantics.
+The single most powerful node in all topologies is the **execution sandbox**. Topologies that attempt to conceptually simulate or judge code using LLM logic (such as **G4: Judge**, **G5: Debate**) burn thousands of tokens trying to reason through Python semantics.
 Topologies that simply execute the code and parse the stdout stacktrace (Like **G2 AgentCoder**) achieve near-perfect pass rates using less than half the tokens. **Execution feedback is strictly cheaper and vastly more accurate than LLM static analysis.**
 
 ### B. The Parallelism & Hierarchy Trap
