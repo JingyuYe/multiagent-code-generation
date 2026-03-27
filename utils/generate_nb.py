@@ -22,7 +22,7 @@ sns.set_theme(style="whitegrid")
 plt.rcParams['figure.figsize'] = (10, 6)
 
 # Load data
-df = pd.read_csv('data/results.csv')
+df = pd.read_csv('data/results_gpt5_nano.csv')
 print(df.head(10))
 """
 
@@ -179,7 +179,7 @@ nb['cells'] = [
     nbf.v4.new_markdown_cell(text_graphs)
 ]
 
-with open('analyze_results.ipynb', 'w') as f:
+with open('analyze_results_gpt5_nano.ipynb', 'w') as f:
     nbf.write(nb, f)
 
-print("Created analyze_results.ipynb successfully!")
+print("Created analyze_results_gpt5_nano.ipynb successfully!")

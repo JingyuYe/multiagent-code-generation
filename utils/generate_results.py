@@ -4,7 +4,7 @@ from collections import defaultdict
 
 raw_results = []
 try:
-    with open('data/raw_results.jsonl', 'r') as f:
+    with open('data/raw_results_gpt5_nano.jsonl', 'r') as f:
         for line in f:
             if line.strip():
                 try:
@@ -56,7 +56,7 @@ if raw_results:
         "Nash_Stability": v["Nash_Stability"]
     } for k, v in summary_results.items()])
     
-    df.to_csv('data/results.csv', index=False)
-    print(f"Generated data/results.csv from {len(raw_results)} partial raw results.")
+    df.to_csv('data/results_gpt5_nano.csv', index=False)
+    print(f"Generated data/results_gpt5_nano.csv from {len(raw_results)} partial raw results.")
 else:
     print("No raw results found.")

@@ -216,7 +216,7 @@ def run_all_experiments():
             }
 
     # Export to CSV final results
-    csv_file = Path("data/results.csv")
+    csv_file = Path("data/results_gpt5_nano.csv")
     csv_file.parent.mkdir(exist_ok=True)
     with open(csv_file, "w") as f:
         f.write("Topology,Pass_Rate,Avg_Tokens,Nash_Stability\n")
