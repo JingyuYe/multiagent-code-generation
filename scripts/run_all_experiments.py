@@ -44,7 +44,7 @@ def run_all_experiments():
     import random
     random.seed(42)
     
-    num_tasks = 10
+    num_tasks = 50
     console.print(f"Loading and sampling {num_tasks} tasks with varied difficulty from MBPP Sanitzed dataset...")
     full_dataset = load_dataset("mbpp", "sanitized", split="test")
     
@@ -58,9 +58,9 @@ def run_all_experiments():
         # Biased sample: 60% hardest, 20% median, 20% easiest
         dataset = sorted_dataset[-hard:] + sorted_dataset[len(sorted_dataset)//2 - med//2 : len(sorted_dataset)//2 - med//2 + med] + sorted_dataset[:easy]
         random.shuffle(dataset)
-        dataset = dataset[start_index:start_index + num_tasks]
-        start_index = 10
+        start_index = 30
         num_tasks = 20
+        dataset = dataset[start_index:start_index + num_tasks]
 
     else:
         dataset = sorted_dataset
@@ -74,7 +74,7 @@ def run_all_experiments():
         "G4: Parallel Judge": {"builder": build_g4_parallel_judge, "roles": ["planner", "coder", "judge", "tester"]},
         "G5: Adversarial Debate": {"builder": build_g5_adversarial_debate, "roles": ["planner", "coder", "red_team", "blue_team", "tester"]},
         "G6: Hierarchical Setup": {"builder": build_g6_hierarchical, "roles": ["manager", "worker", "aggregator", "tester"]},
-        "G7: Mental Simulator": {"builder": build_g7_mental_simulator, "roles": ["planner", "coder", "simulator", "tester"]},
+        # "G7: Mental Simulator": {"builder": build_g7_mental_simulator, "roles": ["planner", "coder", "simulator", "tester"]},
     }
     
     # Store aggregated results
