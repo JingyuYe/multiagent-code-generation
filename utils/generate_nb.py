@@ -118,6 +118,16 @@ graph LR;
     T -- Test Passes --> O[Output];
 ```
 
+**G2.5: Reviewer Repair**
+```mermaid
+graph LR;
+    PL(Planner) --> C(Coder);
+    C --> T(Tester);
+    T -- Test Fails --> R(Reviewer);
+    R --> C;
+    T -- Test Passes --> O[Output];
+```
+
 **G3: MapCoder (Cycle)**
 ```mermaid
 graph LR;

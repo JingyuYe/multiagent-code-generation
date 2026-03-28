@@ -48,56 +48,6 @@
 {"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-240", "passed": false, "tokens": 104, "stability": {"universal_agent": true}}
 {"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-390", "passed": false, "tokens": 239, "stability": {"universal_agent": true}}
 {"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-125", "passed": false, "tokens": 230, "stability": {"universal_agent": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-277", "passed": true, "tokens": 825, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-280", "passed": true, "tokens": 839, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-262", "passed": true, "tokens": 810, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-265", "passed": true, "tokens": 1072, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-237", "passed": false, "tokens": 992, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-255", "passed": false, "tokens": 1196, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-83", "passed": false, "tokens": 1009, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-229", "passed": false, "tokens": 1277, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-268", "passed": false, "tokens": 1237, "stability": {"planner": true, "coder": true, "reviewer": false, "tester": false}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-256", "passed": true, "tokens": 1150, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-271", "passed": true, "tokens": 895, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-422", "passed": true, "tokens": 964, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-471", "passed": true, "tokens": 1077, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-455", "passed": true, "tokens": 788, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-109", "passed": true, "tokens": 1316, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-99", "passed": true, "tokens": 1073, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-425", "passed": false, "tokens": 1279, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-306", "passed": false, "tokens": 1923, "stability": {"planner": false, "coder": false, "reviewer": false, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-245", "passed": true, "tokens": 1590, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-71", "passed": true, "tokens": 913, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-475", "passed": true, "tokens": 828, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-283", "passed": true, "tokens": 1109, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-127", "passed": true, "tokens": 646, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-443", "passed": false, "tokens": 1005, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-168", "passed": true, "tokens": 694, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-286", "passed": false, "tokens": 2418, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-312", "passed": true, "tokens": 911, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-165", "passed": true, "tokens": 1178, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-307", "passed": true, "tokens": 1257, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-442", "passed": false, "tokens": 1016, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-429", "passed": true, "tokens": 1106, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-141", "passed": true, "tokens": 1337, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-82", "passed": true, "tokens": 682, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-239", "passed": true, "tokens": 1872, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-408", "passed": true, "tokens": 1294, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-291", "passed": true, "tokens": 1637, "stability": {"planner": false, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-389", "passed": true, "tokens": 963, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-419", "passed": true, "tokens": 991, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-434", "passed": false, "tokens": 943, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-390", "passed": true, "tokens": 830, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-251", "passed": true, "tokens": 754, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-392", "passed": true, "tokens": 1224, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-223", "passed": true, "tokens": 1438, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-300", "passed": true, "tokens": 1035, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-16", "passed": true, "tokens": 816, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-273", "passed": true, "tokens": 693, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-125", "passed": true, "tokens": 1377, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-240", "passed": true, "tokens": 1020, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-230", "passed": true, "tokens": 1093, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-426", "passed": true, "tokens": 862, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
 {"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-277", "passed": true, "tokens": 440, "stability": {"planner": true, "coder": true, "tester": true}}
 {"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-280", "passed": true, "tokens": 546, "stability": {"planner": true, "coder": true, "tester": true}}
 {"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-262", "passed": true, "tokens": 540, "stability": {"planner": true, "coder": true, "tester": true}}
@@ -148,55 +98,6 @@
 {"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-16", "passed": true, "tokens": 1033, "stability": {"planner": true, "coder": true, "tester": true}}
 {"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-426", "passed": true, "tokens": 505, "stability": {"planner": true, "coder": true, "tester": true}}
 {"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-125", "passed": true, "tokens": 885, "stability": {"planner": true, "coder": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-277", "passed": true, "tokens": 625, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-280", "passed": true, "tokens": 844, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-262", "passed": true, "tokens": 875, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-256", "passed": true, "tokens": 1315, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-265", "passed": true, "tokens": 1278, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-271", "passed": true, "tokens": 782, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-422", "passed": true, "tokens": 1107, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-255", "passed": true, "tokens": 2416, "stability": {"planner": false, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-268", "passed": true, "tokens": 1708, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-109", "passed": true, "tokens": 1403, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-471", "passed": true, "tokens": 1024, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-455", "passed": true, "tokens": 725, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-237", "passed": false, "tokens": 2787, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-83", "passed": false, "tokens": 3356, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-306", "passed": true, "tokens": 4961, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-99", "passed": true, "tokens": 952, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-245", "passed": true, "tokens": 1529, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-71", "passed": true, "tokens": 1568, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-229", "passed": false, "tokens": 4292, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-283", "passed": true, "tokens": 1350, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-127", "passed": true, "tokens": 603, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-168", "passed": true, "tokens": 700, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-165", "passed": true, "tokens": 921, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-312", "passed": true, "tokens": 834, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-443", "passed": true, "tokens": 2975, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-429", "passed": true, "tokens": 953, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-141", "passed": true, "tokens": 905, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-425", "passed": false, "tokens": 4964, "stability": {"planner": false, "coder": false, "reviewer": false, "tester": false}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-475", "passed": false, "tokens": 3254, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-291", "passed": true, "tokens": 1633, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-408", "passed": true, "tokens": 1339, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-82", "passed": true, "tokens": 794, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-442", "passed": true, "tokens": 2575, "stability": {"planner": true, "coder": true, "reviewer": false, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-307", "passed": true, "tokens": 1159, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-389", "passed": true, "tokens": 897, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-419", "passed": true, "tokens": 857, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-390", "passed": true, "tokens": 993, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-392", "passed": true, "tokens": 1313, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-223", "passed": true, "tokens": 1556, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-300", "passed": true, "tokens": 1378, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-251", "passed": true, "tokens": 759, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-273", "passed": true, "tokens": 799, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-125", "passed": true, "tokens": 1300, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-230", "passed": true, "tokens": 949, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-426", "passed": true, "tokens": 823, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-286", "passed": false, "tokens": 6779, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-240", "passed": true, "tokens": 1015, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-16", "passed": true, "tokens": 850, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-434", "passed": false, "tokens": 2694, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
 {"topology": "G4: Parallel Judge", "task_id": "MBPP-262", "passed": true, "tokens": 3697, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
 {"topology": "G4: Parallel Judge", "task_id": "MBPP-280", "passed": true, "tokens": 3599, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
 {"topology": "G4: Parallel Judge", "task_id": "MBPP-277", "passed": true, "tokens": 2912, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
@@ -246,7 +147,6 @@
 {"topology": "G4: Parallel Judge", "task_id": "MBPP-426", "passed": true, "tokens": 3651, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
 {"topology": "G4: Parallel Judge", "task_id": "MBPP-273", "passed": true, "tokens": 3481, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
 {"topology": "G4: Parallel Judge", "task_id": "MBPP-230", "passed": true, "tokens": 3624, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
-{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-239", "passed": true, "tokens": 1495, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
 {"topology": "G4: Parallel Judge", "task_id": "MBPP-71", "passed": true, "tokens": 5488, "stability": {"planner": true, "coder": false, "judge": true, "tester": true}}
 {"topology": "G5: Adversarial Debate", "task_id": "MBPP-277", "passed": true, "tokens": 5162, "stability": {"planner": true, "coder": true, "red_team": false, "blue_team": false, "tester": true}}
 {"topology": "G5: Adversarial Debate", "task_id": "MBPP-262", "passed": true, "tokens": 4897, "stability": {"planner": true, "coder": true, "red_team": false, "blue_team": true, "tester": true}}
@@ -347,3 +247,152 @@
 {"topology": "G6: Hierarchical Setup", "task_id": "MBPP-16", "passed": true, "tokens": 6776, "stability": {"manager": true, "worker": false, "aggregator": true, "tester": true}}
 {"topology": "G6: Hierarchical Setup", "task_id": "MBPP-125", "passed": false, "tokens": 9414, "stability": {"manager": true, "worker": false, "aggregator": false, "tester": true}}
 {"topology": "G6: Hierarchical Setup", "task_id": "MBPP-426", "passed": true, "tokens": 8636, "stability": {"manager": true, "worker": false, "aggregator": false, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-277", "passed": true, "tokens": 792, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-280", "passed": true, "tokens": 938, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-237", "passed": false, "tokens": 1080, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-262", "passed": true, "tokens": 1030, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-83", "passed": false, "tokens": 1189, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-265", "passed": false, "tokens": 1026, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-255", "passed": true, "tokens": 1265, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-256", "passed": true, "tokens": 1177, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-229", "passed": false, "tokens": 1172, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-268", "passed": false, "tokens": 1378, "stability": {"planner": false, "coder": false, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-422", "passed": true, "tokens": 1084, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-271", "passed": true, "tokens": 901, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-455", "passed": true, "tokens": 928, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-471", "passed": true, "tokens": 1015, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-109", "passed": true, "tokens": 1702, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-425", "passed": false, "tokens": 1287, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": false}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-99", "passed": true, "tokens": 979, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-306", "passed": true, "tokens": 2214, "stability": {"planner": true, "coder": true, "reviewer": false, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-245", "passed": true, "tokens": 1602, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-71", "passed": true, "tokens": 1102, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-443", "passed": false, "tokens": 1102, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-286", "passed": false, "tokens": 2544, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-475", "passed": false, "tokens": 1288, "stability": {"planner": true, "coder": true, "reviewer": false, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-283", "passed": true, "tokens": 1258, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-127", "passed": true, "tokens": 857, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-168", "passed": true, "tokens": 745, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-165", "passed": true, "tokens": 1126, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-239", "passed": true, "tokens": 1430, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-312", "passed": true, "tokens": 1024, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-141", "passed": true, "tokens": 936, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-442", "passed": false, "tokens": 1297, "stability": {"planner": false, "coder": false, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-82", "passed": true, "tokens": 1029, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-307", "passed": true, "tokens": 1428, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-429", "passed": true, "tokens": 1336, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-408", "passed": true, "tokens": 1343, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-291", "passed": false, "tokens": 2142, "stability": {"planner": false, "coder": false, "reviewer": false, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-389", "passed": true, "tokens": 1095, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-419", "passed": true, "tokens": 915, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-434", "passed": false, "tokens": 939, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-223", "passed": true, "tokens": 1340, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-390", "passed": true, "tokens": 1267, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-251", "passed": true, "tokens": 762, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-392", "passed": true, "tokens": 1199, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-125", "passed": true, "tokens": 1225, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-300", "passed": true, "tokens": 1137, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-273", "passed": true, "tokens": 886, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-240", "passed": true, "tokens": 1121, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-16", "passed": false, "tokens": 1286, "stability": {"planner": false, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-230", "passed": true, "tokens": 1015, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-426", "passed": true, "tokens": 1280, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-277", "passed": true, "tokens": 525, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-280", "passed": true, "tokens": 592, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-262", "passed": true, "tokens": 515, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-256", "passed": true, "tokens": 739, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-422", "passed": true, "tokens": 728, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-255", "passed": true, "tokens": 1424, "stability": {"planner": true, "coder": true, "tester": true, "reviewer": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-271", "passed": true, "tokens": 623, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-265", "passed": true, "tokens": 1379, "stability": {"planner": true, "coder": true, "tester": false, "reviewer": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-471", "passed": true, "tokens": 643, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-109", "passed": true, "tokens": 1005, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-455", "passed": true, "tokens": 585, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-83", "passed": false, "tokens": 2172, "stability": {"planner": true, "coder": false, "tester": false, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-237", "passed": false, "tokens": 1915, "stability": {"planner": true, "coder": true, "tester": false, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-99", "passed": true, "tokens": 739, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-71", "passed": true, "tokens": 777, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-245", "passed": true, "tokens": 1237, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-283", "passed": true, "tokens": 924, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-127", "passed": true, "tokens": 579, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-229", "passed": false, "tokens": 2887, "stability": {"planner": true, "coder": true, "tester": false, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-168", "passed": true, "tokens": 440, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-475", "passed": true, "tokens": 677, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-443", "passed": true, "tokens": 1290, "stability": {"planner": true, "coder": true, "tester": true, "reviewer": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-165", "passed": true, "tokens": 634, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-425", "passed": true, "tokens": 912, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-312", "passed": true, "tokens": 624, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-239", "passed": true, "tokens": 960, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-141", "passed": true, "tokens": 910, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-82", "passed": true, "tokens": 671, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-429", "passed": true, "tokens": 733, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-408", "passed": true, "tokens": 1006, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-389", "passed": true, "tokens": 807, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-306", "passed": false, "tokens": 6517, "stability": {"planner": false, "coder": false, "tester": false, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-307", "passed": false, "tokens": 2428, "stability": {"planner": true, "coder": false, "tester": false, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-442", "passed": true, "tokens": 751, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-419", "passed": true, "tokens": 761, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-286", "passed": false, "tokens": 5596, "stability": {"planner": false, "coder": true, "tester": false, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-291", "passed": true, "tokens": 725, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-390", "passed": true, "tokens": 707, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-223", "passed": true, "tokens": 974, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-392", "passed": true, "tokens": 847, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-251", "passed": true, "tokens": 454, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-300", "passed": true, "tokens": 752, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-273", "passed": true, "tokens": 672, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-230", "passed": true, "tokens": 721, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-240", "passed": true, "tokens": 736, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-434", "passed": false, "tokens": 1712, "stability": {"planner": true, "coder": false, "tester": false, "reviewer": false}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-426", "passed": true, "tokens": 766, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-16", "passed": true, "tokens": 1486, "stability": {"planner": true, "coder": true, "tester": true, "reviewer": true}}
+{"topology": "G2.5: Reviewer Repair", "task_id": "MBPP-125", "passed": false, "tokens": 3557, "stability": {"planner": false, "coder": false, "tester": false, "reviewer": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-277", "passed": true, "tokens": 678, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-280", "passed": true, "tokens": 860, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-262", "passed": true, "tokens": 887, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-256", "passed": true, "tokens": 1426, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-422", "passed": true, "tokens": 1069, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-255", "passed": true, "tokens": 1174, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-271", "passed": true, "tokens": 1008, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-265", "passed": true, "tokens": 1822, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-109", "passed": true, "tokens": 1920, "stability": {"planner": false, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-471", "passed": true, "tokens": 1049, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-455", "passed": true, "tokens": 894, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-268", "passed": true, "tokens": 2169, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-237", "passed": false, "tokens": 2991, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-83", "passed": false, "tokens": 3621, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-245", "passed": true, "tokens": 1977, "stability": {"planner": true, "coder": true, "reviewer": false, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-229", "passed": false, "tokens": 3814, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-99", "passed": true, "tokens": 1225, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-71", "passed": true, "tokens": 1188, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-283", "passed": true, "tokens": 1277, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-127", "passed": true, "tokens": 715, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-168", "passed": true, "tokens": 739, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-475", "passed": true, "tokens": 974, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-165", "passed": true, "tokens": 863, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-425", "passed": true, "tokens": 1802, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-239", "passed": true, "tokens": 1725, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-312", "passed": true, "tokens": 970, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-443", "passed": false, "tokens": 2974, "stability": {"planner": false, "coder": false, "reviewer": false, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-306", "passed": true, "tokens": 2427, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-429", "passed": true, "tokens": 1641, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-82", "passed": true, "tokens": 900, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-141", "passed": true, "tokens": 1456, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-389", "passed": true, "tokens": 977, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-307", "passed": true, "tokens": 2649, "stability": {"planner": true, "coder": true, "reviewer": false, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-419", "passed": true, "tokens": 1059, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-408", "passed": true, "tokens": 1586, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-442", "passed": true, "tokens": 2888, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-390", "passed": true, "tokens": 1364, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-251", "passed": true, "tokens": 873, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-392", "passed": true, "tokens": 1291, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-300", "passed": true, "tokens": 1153, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-125", "passed": true, "tokens": 1392, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-286", "passed": false, "tokens": 7756, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-273", "passed": true, "tokens": 863, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-223", "passed": true, "tokens": 1272, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-16", "passed": true, "tokens": 2114, "stability": {"planner": false, "coder": true, "reviewer": true, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-230", "passed": true, "tokens": 1107, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-240", "passed": true, "tokens": 1012, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-426", "passed": true, "tokens": 956, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-434", "passed": false, "tokens": 2742, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": false}}
+{"topology": "G6: Hierarchical Setup", "task_id": "MBPP-442", "passed": false, "tokens": 6462, "stability": {"manager": true, "worker": false, "aggregator": true, "tester": true}}

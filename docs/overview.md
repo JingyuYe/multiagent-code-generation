@@ -10,8 +10,8 @@ The system retrieves tasks strictly from the **Mostly Basic Programming Problems
 
 ## 2. Model & Inference Engine
 We manage LLM inference centrally to enforce strict effort constraints.
-- **Model**: Ollama's local `qwen2.5-coder:7b`. We use this model because it natively executes entirely on 16GB unified memory Macs while scoring competitively against GPT-4 on MBPP metrics, avoiding Out-of-Memory crashes or page-outs. 
-- **Implementation Location**: `src/core/model.py`.
+- **Model**: We support dual engines. Primarily, we evaluate utilizing lightweight, localized **GPT-5.4 Nano** queries via the OpenAI SDK, which avoids heavy local memory fragmentation. Also included is configuration for Ollama's local `qwen2.5-coder:7b` for 100% offline inference on Apple Silicon.
+- **Implementation Location**: `src/core/model.py`. Use the `.env` file (`USE_OPENAI=true`) to toggle.
 - **Effort Constraints ($e \in \{1, \dots, n\}$)**: 
   - Effort is not fine-tuned into the model. Instead, it is constrained at the inference stage. 
   - **High Effort ($e=1$)**: Granted a generous generation constraint (`num_predict: 2048`) and slightly higher temperature (`0.6`) for reasoning elasticity.
@@ -21,14 +21,15 @@ We manage LLM inference centrally to enforce strict effort constraints.
 We model interaction through LangGraph `StateGraphs`. Every agent is a Node and shares a universally accessible memory ledger `TaskState` defined in `src/core/state.py`.
 - **G0 (Single-Agent Baseline)**: Maps directly from Task -> Output.
 - **G1 (Waterfall)**: Linear sequence of Planner -> Coder -> Reviewer -> Tester. No backtracking.
-- **G2 (AgentCoder)**: A conditional loop between Coder <-> Tester based purely on test execution success (bounded by K iterations).
+- **G2 (AgentCoder)**: A conditional loop between Coder <-> Tester based purely on test execution success.
+- **G2.5 (Reviewer Repair)**: Execution feedback with an injected static analyzer before Coder patch revision.
 - **G3 (MapCoder Cycle)**: A complex cycle where test failures trigger a complete rewrite loop originating back at the Planner.
 
 ## 4. Evaluation Criteria
 
 ### A. Pass@1 Accuracy
 Measured by whether the generated string of Python code can pass all hidden assertions on the very first "submit" loop.
-- **Implementation**: Evaluated inside the insecure execution sandbox at `src/execution/sandbox.py`. It runs an `exec(full_code)` on a simulated environment.
+- **Implementation**: Evaluated inside the execution sandbox at `src/execution/sandbox.py`. Code is written to a temp file and executed via `subprocess.run()` with a 5-second timeout to safely catch infinite loops and segfaults.
 
 ### B. Utility Function ($U_i$)
 To study multi-agent code generation under Cooperative Game Theory, we utilize the following equation:

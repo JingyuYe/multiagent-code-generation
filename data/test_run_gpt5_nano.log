@@ -5,7 +5,6 @@
 (Parallel Mode)
 Loading and sampling 50 tasks with varied difficulty from 
 MBPP Sanitzed dataset...
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 🔄 Found existing progress. Resume mode enabled.
 
 Evaluating Topology: G0: Baseline (0-shot)
@@ -20,6 +19,9 @@ Evaluating Topology: G2: AgentCoder (Loop)
   ⏭️ Skipping 50 tasks already completed for G2: AgentCoder 
 (Loop)
 
+Evaluating Topology: G2.5: Reviewer Repair
+Remaining tasks for G2.5: Reviewer Repair:   0%|          | 0/50 [00:00<?, ?it/s]Remaining tasks for G2.5: Reviewer Repair:   2%|▏         | 1/50 [00:24<20:24, 24.99s/it]Remaining tasks for G2.5: Reviewer Repair:   4%|▍         | 2/50 [00:27<09:38, 12.06s/it]Remaining tasks for G2.5: Reviewer Repair:   6%|▌         | 3/50 [00:28<05:19,  6.79s/it]Remaining tasks for G2.5: Reviewer Repair:   8%|▊         | 4/50 [00:39<06:22,  8.31s/it]Remaining tasks for G2.5: Reviewer Repair:  10%|█         | 5/50 [00:58<09:09, 12.22s/it]Remaining tasks for G2.5: Reviewer Repair:  12%|█▏        | 6/50 [00:59<06:10,  8.41s/it]Remaining tasks for G2.5: Reviewer Repair:  14%|█▍        | 7/50 [01:08<06:11,  8.65s/it]Remaining tasks for G2.5: Reviewer Repair:  16%|█▌        | 8/50 [01:11<04:48,  6.87s/it]Remaining tasks for G2.5: Reviewer Repair:  18%|█▊        | 9/50 [01:19<04:59,  7.30s/it]Remaining tasks for G2.5: Reviewer Repair:  20%|██        | 10/50 [01:26<04:42,  7.05s/it]Remaining tasks for G2.5: Reviewer Repair:  22%|██▏       | 11/50 [01:28<03:40,  5.66s/it]Remaining tasks for G2.5: Reviewer Repair:  24%|██▍       | 12/50 [01:44<05:34,  8.81s/it]Remaining tasks for G2.5: Reviewer Repair:  28%|██▊       | 14/50 [01:50<03:41,  6.14s/it]Remaining tasks for G2.5: Reviewer Repair:  30%|███       | 15/50 [01:57<03:39,  6.27s/it]Remaining tasks for G2.5: Reviewer Repair:  32%|███▏      | 16/50 [02:00<02:59,  5.27s/it]Remaining tasks for G2.5: Reviewer Repair:  34%|███▍      | 17/50 [02:08<03:23,  6.17s/it]Remaining tasks for G2.5: Reviewer Repair:  36%|███▌      | 18/50 [02:17<03:38,  6.82s/it]Remaining tasks for G2.5: Reviewer Repair:  38%|███▊      | 19/50 [02:18<02:40,  5.17s/it]Remaining tasks for G2.5: Reviewer Repair:  40%|████      | 20/50 [02:18<01:55,  3.86s/it]Remaining tasks for G2.5: Reviewer Repair:  42%|████▏     | 21/50 [02:21<01:39,  3.44s/it]Remaining tasks for G2.5: Reviewer Repair:  44%|████▍     | 22/50 [02:23<01:25,  3.04s/it]Remaining tasks for G2.5: Reviewer Repair:  46%|████▌     | 23/50 [02:51<04:43, 10.51s/it]Remaining tasks for G2.5: Reviewer Repair:  48%|████▊     | 24/50 [02:55<03:38,  8.42s/it]Remaining tasks for G2.5: Reviewer Repair:  50%|█████     | 25/50 [02:55<02:32,  6.10s/it]Remaining tasks for G2.5: Reviewer Repair:  52%|█████▏    | 26/50 [02:57<01:55,  4.79s/it]Remaining tasks for G2.5: Reviewer Repair:  54%|█████▍    | 27/50 [03:02<01:54,  4.98s/it]Remaining tasks for G2.5: Reviewer Repair:  56%|█████▌    | 28/50 [03:04<01:25,  3.88s/it]Remaining tasks for G2.5: Reviewer Repair:  58%|█████▊    | 29/50 [03:06<01:14,  3.56s/it]Remaining tasks for G2.5: Reviewer Repair:  60%|██████    | 30/50 [03:27<02:55,  8.77s/it]Remaining tasks for G2.5: Reviewer Repair:  62%|██████▏   | 31/50 [03:32<02:22,  7.50s/it]Remaining tasks for G2.5: Reviewer Repair:  64%|██████▍   | 32/50 [03:35<01:48,  6.03s/it]Remaining tasks for G2.5: Reviewer Repair:  66%|██████▌   | 33/50 [03:36<01:21,  4.79s/it]Remaining tasks for G2.5: Reviewer Repair:  68%|██████▊   | 34/50 [03:38<01:02,  3.90s/it]Remaining tasks for G2.5: Reviewer Repair:  70%|███████   | 35/50 [03:48<01:26,  5.75s/it]Remaining tasks for G2.5: Reviewer Repair:  72%|███████▏  | 36/50 [03:52<01:10,  5.01s/it]Remaining tasks for G2.5: Reviewer Repair:  74%|███████▍  | 37/50 [04:05<01:38,  7.59s/it]Remaining tasks for G2.5: Reviewer Repair:  76%|███████▌  | 38/50 [04:16<01:41,  8.48s/it]Remaining tasks for G2.5: Reviewer Repair:  78%|███████▊  | 39/50 [04:17<01:10,  6.39s/it]Remaining tasks for G2.5: Reviewer Repair:  80%|████████  | 40/50 [04:17<00:45,  4.52s/it]Remaining tasks for G2.5: Reviewer Repair:  82%|████████▏ | 41/50 [04:19<00:34,  3.78s/it]Remaining tasks for G2.5: Reviewer Repair:  84%|████████▍ | 42/50 [04:21<00:24,  3.07s/it]Remaining tasks for G2.5: Reviewer Repair:  86%|████████▌ | 43/50 [04:24<00:21,  3.06s/it]Remaining tasks for G2.5: Reviewer Repair:  88%|████████▊ | 44/50 [04:37<00:36,  6.01s/it]Remaining tasks for G2.5: Reviewer Repair:  90%|█████████ | 45/50 [04:51<00:42,  8.54s/it]Remaining tasks for G2.5: Reviewer Repair:  92%|█████████▏| 46/50 [04:52<00:24,  6.14s/it]Remaining tasks for G2.5: Reviewer Repair:  94%|█████████▍| 47/50 [04:54<00:14,  4.96s/it]Remaining tasks for G2.5: Reviewer Repair: 100%|██████████| 50/50 [04:58<00:00,  3.00s/it]Remaining tasks for G2.5: Reviewer Repair: 100%|██████████| 50/50 [04:58<00:00,  5.98s/it]
+
 Evaluating Topology: G3: MapCoder (Cycle)
   ⏭️ Skipping 50 tasks already completed for G3: MapCoder 
 (Cycle)
@@ -33,372 +35,9 @@ Evaluating Topology: G5: Adversarial Debate
 Debate
 
 Evaluating Topology: G6: Hierarchical Setup
-  ⏭️ Skipping 22 tasks already completed for G6: 
+  ⏭️ Skipping 49 tasks already completed for G6: 
 Hierarchical Setup
-Remaining tasks for G6: Hierarchical Setup:   0%|          | 0/28 [00:00<?, ?it/s]Remaining tasks for G6: Hierarchical Setup:   4%|▎         | 1/28 [01:35<42:59, 95.54s/it]Remaining tasks for G6: Hierarchical Setup:   7%|▋         | 2/28 [01:36<17:19, 39.98s/it]Remaining tasks for G6: Hierarchical Setup:  11%|█         | 3/28 [01:37<09:10, 22.04s/it]Remaining tasks for G6: Hierarchical Setup:  14%|█▍        | 4/28 [01:43<06:17, 15.71s/it]Remaining tasks for G6: Hierarchical Setup:  18%|█▊        | 5/28 [01:58<05:54, 15.40s/it]Remaining tasks for G6: Hierarchical Setup:  21%|██▏       | 6/28 [02:12<05:29, 15.00s/it]Remaining tasks for G6: Hierarchical Setup:  25%|██▌       | 7/28 [02:16<04:00, 11.45s/it]Error on MBPP-442: Error code: 429 - {'error': {'message': 
-'You exceeded your current quota, please check your plan and
-billing details. For more information on this error, read 
-the docs: 
-https://platform.openai.com/docs/guides/error-codes/api-erro
-rs.', 'type': 'insufficient_quota', 'param': None, 'code': 
-'insufficient_quota'}}
-Remaining tasks for G6: Hierarchical Setup:  29%|██▊       | 8/28 [02:42<05:19, 15.98s/it]Remaining tasks for G6: Hierarchical Setup:  32%|███▏      | 9/28 [02:46<03:52, 12.23s/it]Remaining tasks for G6: Hierarchical Setup:  36%|███▌      | 10/28 [02:55<03:21, 11.19s/it]Remaining tasks for G6: Hierarchical Setup:  39%|███▉      | 11/28 [03:04<03:02, 10.74s/it]Remaining tasks for G6: Hierarchical Setup:  43%|████▎     | 12/28 [03:22<03:26, 12.92s/it]Remaining tasks for G6: Hierarchical Setup:  46%|████▋     | 13/28 [03:40<03:34, 14.27s/it]Remaining tasks for G6: Hierarchical Setup:  50%|█████     | 14/28 [03:56<03:29, 14.97s/it]Remaining tasks for G6: Hierarchical Setup:  54%|█████▎    | 15/28 [03:58<02:21, 10.90s/it]Remaining tasks for G6: Hierarchical Setup:  57%|█████▋    | 16/28 [04:13<02:25, 12.11s/it]Remaining tasks for G6: Hierarchical Setup:  61%|██████    | 17/28 [04:17<01:46,  9.71s/it]Remaining tasks for G6: Hierarchical Setup:  64%|██████▍   | 18/28 [04:20<01:18,  7.89s/it]Remaining tasks for G6: Hierarchical Setup:  68%|██████▊   | 19/28 [04:44<01:54, 12.77s/it]Remaining tasks for G6: Hierarchical Setup:  71%|███████▏  | 20/28 [04:48<01:21, 10.14s/it]Remaining tasks for G6: Hierarchical Setup:  75%|███████▌  | 21/28 [05:13<01:40, 14.35s/it]Remaining tasks for G6: Hierarchical Setup:  79%|███████▊  | 22/28 [05:30<01:31, 15.30s/it]Remaining tasks for G6: Hierarchical Setup:  82%|████████▏ | 23/28 [05:30<00:53, 10.79s/it]Remaining tasks for G6: Hierarchical Setup:  86%|████████▌ | 24/28 [05:35<00:35,  8.84s/it]Remaining tasks for G6: Hierarchical Setup:  89%|████████▉ | 25/28 [05:36<00:19,  6.63s/it]Remaining tasks for G6: Hierarchical Setup:  93%|█████████▎| 26/28 [05:40<00:11,  5.70s/it]Remaining tasks for G6: Hierarchical Setup:  96%|█████████▋| 27/28 [05:46<00:05,  5.99s/it]Remaining tasks for G6: Hierarchical Setup: 100%|██████████| 28/28 [06:14<00:00, 12.63s/it]Remaining tasks for G6: Hierarchical Setup: 100%|██████████| 28/28 [06:14<00:00, 13.39s/it]
-
-Evaluating Topology: G7: Mental Simulator
-Remaining tasks for G7: Mental Simulator:   0%|          | 0/50 [00:00<?, ?it/s]Error on MBPP-277: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 196026, Requested 4844. Please try again in 
-261ms. Visit https://platform.openai.com/account/rate-limits
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:   2%|▏         | 1/50 [01:23<1:08:35, 84.00s/it]Error on MBPP-256: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 195773, Requested 5003. Please try again in 
-232ms. Visit https://platform.openai.com/account/rate-limits
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:   4%|▍         | 2/50 [01:24<27:49, 34.79s/it]  Error on MBPP-237: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 7888. Please try again in 
-2.366s. Visit 
-https://platform.openai.com/account/rate-limits to learn 
-more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:   6%|▌         | 3/50 [01:25<15:02, 19.21s/it]Error on MBPP-265: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 5492. Please try again in 
-1.647s. Visit 
-https://platform.openai.com/account/rate-limits to learn 
-more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:   8%|▊         | 4/50 [01:26<09:20, 12.18s/it]Error on MBPP-255: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 443. Please try again in 
-132ms. Visit https://platform.openai.com/account/rate-limits
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  10%|█         | 5/50 [01:26<05:54,  7.88s/it]Error on MBPP-109: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 76. Please try again in 22ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-471: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 64. Please try again in 19ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  14%|█▍        | 7/50 [01:26<02:49,  3.95s/it]Error on MBPP-229: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 383. Please try again in 
-114ms. Visit https://platform.openai.com/account/rate-limits
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-455: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 64. Please try again in 19ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  18%|█▊        | 9/50 [01:27<01:34,  2.32s/it]Error on MBPP-286: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 78. Please try again in 23ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  20%|██        | 10/50 [01:27<01:12,  1.82s/it]Error on MBPP-425: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 64. Please try again in 19ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  22%|██▏       | 11/50 [01:27<00:54,  1.41s/it]Error on MBPP-99: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 75. Please try again in 22ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  24%|██▍       | 12/50 [01:27<00:41,  1.08s/it]Error on MBPP-262: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 4839. Please try again in 
-1.451s. Visit 
-https://platform.openai.com/account/rate-limits to learn 
-more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  26%|██▌       | 13/50 [01:28<00:34,  1.08it/s]Error on MBPP-280: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 195125, Requested 4994. Please try again in 
-35ms. Visit https://platform.openai.com/account/rate-limits 
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  28%|██▊       | 14/50 [01:29<00:42,  1.19s/it]Error on MBPP-83: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 196. Please try again in 
-58ms. Visit https://platform.openai.com/account/rate-limits 
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  30%|███       | 15/50 [01:32<00:51,  1.47s/it]Error on MBPP-422: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 211. Please try again in 
-63ms. Visit https://platform.openai.com/account/rate-limits 
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-127: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 54. Please try again in 16ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  34%|███▍      | 17/50 [01:32<00:29,  1.13it/s]Error on MBPP-168: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 64. Please try again in 19ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-165: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 83. Please try again in 24ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  38%|███▊      | 19/50 [01:32<00:18,  1.64it/s]Error on MBPP-239: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 105. Please try again in 
-31ms. Visit https://platform.openai.com/account/rate-limits 
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-307: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 55. Please try again in 16ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  42%|████▏     | 21/50 [01:33<00:12,  2.25it/s]Error on MBPP-291: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 87. Please try again in 26ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-283: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 771. Please try again in 
-231ms. Visit https://platform.openai.com/account/rate-limits
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  46%|████▌     | 23/50 [01:33<00:08,  3.13it/s]Error on MBPP-312: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 55. Please try again in 16ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  48%|████▊     | 24/50 [01:33<00:07,  3.51it/s]Error on MBPP-429: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 64. Please try again in 19ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-442: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 64. Please try again in 19ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  52%|█████▏    | 26/50 [01:33<00:05,  4.62it/s]Error on MBPP-443: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 249. Please try again in 
-74ms. Visit https://platform.openai.com/account/rate-limits 
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  54%|█████▍    | 27/50 [01:33<00:04,  5.18it/s]Error on MBPP-141: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 55. Please try again in 16ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-408: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 79. Please try again in 23ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-475: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 773. Please try again in 
-231ms. Visit https://platform.openai.com/account/rate-limits
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  60%|██████    | 30/50 [01:33<00:02,  7.50it/s]Error on MBPP-82: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 56. Please try again in 16ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-268: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 232. Please try again in 
-69ms. Visit https://platform.openai.com/account/rate-limits 
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  64%|██████▍   | 32/50 [01:33<00:01,  9.21it/s]Error on MBPP-389: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 56. Please try again in 16ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-419: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 76. Please try again in 22ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  68%|██████▊   | 34/50 [01:34<00:01, 10.06it/s]Error on MBPP-223: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 102. Please try again in 
-30ms. Visit https://platform.openai.com/account/rate-limits 
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-392: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 76. Please try again in 22ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-434: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 64. Please try again in 19ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-390: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 64. Please try again in 19ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  76%|███████▌  | 38/50 [01:34<00:00, 13.92it/s]Error on MBPP-271: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 199926, Requested 79. Please try again in 1ms. 
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-300: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 77. Please try again in 23ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-251: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 79. Please try again in 23ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  82%|████████▏ | 41/50 [01:34<00:00, 14.60it/s]Error on MBPP-125: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 78. Please try again in 23ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-16: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 80. Please try again in 24ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-273: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 199950, Requested 80. Please try again in 9ms. 
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-71: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 1058. Please try again in 
-317ms. Visit https://platform.openai.com/account/rate-limits
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-240: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 75. Please try again in 22ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  92%|█████████▏| 46/50 [01:34<00:00, 21.02it/s]Error on MBPP-426: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 54. Please try again in 16ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-230: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 200000, Requested 77. Please try again in 23ms.
-Visit https://platform.openai.com/account/rate-limits to 
-learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Error on MBPP-306: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 199751, Requested 584. Please try again in 
-100ms. Visit https://platform.openai.com/account/rate-limits
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator:  98%|█████████▊| 49/50 [01:34<00:00, 13.94it/s]Error on MBPP-245: Error code: 429 - {'error': {'message': 
-'Rate limit reached for gpt-5.4-nano in organization 
-org-gEEQyu3wvriTxCfAIbPqtP2b on tokens per min (TPM): Limit 
-200000, Used 199736, Requested 1078. Please try again in 
-244ms. Visit https://platform.openai.com/account/rate-limits
-to learn more.', 'type': 'tokens', 'param': None, 'code': 
-'rate_limit_exceeded'}}
-Remaining tasks for G7: Mental Simulator: 100%|██████████| 50/50 [01:35<00:00,  1.91s/it]
+Remaining tasks for G6: Hierarchical Setup:   0%|          | 0/1 [00:00<?, ?it/s]Remaining tasks for G6: Hierarchical Setup: 100%|██████████| 1/1 [01:23<00:00, 83.75s/it]Remaining tasks for G6: Hierarchical Setup: 100%|██████████| 1/1 [01:23<00:00, 83.75s/it]
 
 ==== FINAL COMPREHENSIVE EXPERIMENT RESULTS ====
              Topology Performance Matrix (MBPP)             
@@ -410,8 +49,9 @@ to learn more.', 'type': 'tokens', 'param': None, 'code':
 │ G0: Baseline (0-shot)  │   4.0%   │    131    │  100.0%  │
 │ G1: Waterfall (Linear) │  78.0%   │   1105    │  90.0%   │
 │ G2: AgentCoder (Loop)  │  84.0%   │    987    │  78.0%   │
+│ G2.5: Reviewer Repair  │  82.0%   │   1179    │  72.0%   │
 │ G3: MapCoder (Cycle)   │  86.0%   │   1659    │  78.0%   │
 │ G4: Parallel Judge     │  72.0%   │   4717    │  74.0%   │
 │ G5: Adversarial Debate │  78.0%   │   5506    │  26.0%   │
-│ G6: Hierarchical Setup │  75.5%   │   7019    │  10.2%   │
+│ G6: Hierarchical Setup │  74.0%   │   6994    │  10.0%   │
 └────────────────────────┴──────────┴───────────┴──────────┘

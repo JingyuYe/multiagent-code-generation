@@ -19,6 +19,7 @@ if raw_results:
         "G0: Baseline (0-shot)": {"Pass_Rate": "0.0%", "Avg_Tokens": 0, "Nash_Stability": "0.0%"},
         "G1: Waterfall (Linear)": {"Pass_Rate": "0.0%", "Avg_Tokens": 0, "Nash_Stability": "0.0%"},
         "G2: AgentCoder (Loop)": {"Pass_Rate": "0.0%", "Avg_Tokens": 0, "Nash_Stability": "0.0%"},
+        "G2.5: Reviewer Repair": {"Pass_Rate": "0.0%", "Avg_Tokens": 0, "Nash_Stability": "0.0%"},
         "G3: MapCoder (Cycle)": {"Pass_Rate": "0.0%", "Avg_Tokens": 0, "Nash_Stability": "0.0%"},
         "G4: Parallel Judge": {"Pass_Rate": "0.0%", "Avg_Tokens": 0, "Nash_Stability": "0.0%"},
         "G5: Adversarial Debate": {"Pass_Rate": "0.0%", "Avg_Tokens": 0, "Nash_Stability": "0.0%"},

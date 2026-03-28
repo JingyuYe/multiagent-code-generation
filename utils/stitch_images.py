@@ -4,12 +4,12 @@ import os
 images = []
 labels = [
     "G0: Baseline (0-shot)", "G1: Waterfall (Linear)", 
-    "G2: AgentCoder (Loop)", "G3: MapCoder (Cycle)", 
+    "G2: AgentCoder (Loop)", "G2.5: Reviewer Repair", "G3: MapCoder (Cycle)", 
     "G4: Parallel Judge", "G5: Adversarial Debate", 
     "G6: Hierarchical Setup"
 ]
 
-for i in range(1, 8):
+for i in range(1, 9):
     file_name = f"graph_structure-{i}.png"
     if os.path.exists(file_name):
         images.append(Image.open(file_name))
@@ -28,8 +28,9 @@ if images:
     
     y_offset = padding
     for i, img in enumerate(images):
-        # Draw label
-        draw.text((padding, y_offset), labels[i], fill="black")
+        if i < len(labels):
+            # Draw label
+            draw.text((padding, y_offset), labels[i], fill="black")
         y_offset += text_height
         
         # Paste image centered
@@ -37,7 +38,7 @@ if images:
         composite.paste(img, (x_offset, y_offset))
         y_offset += img.height + padding
         
-    composite.save("graph_structure.png")
-    print("Combined image saved to graph_structure.png")
+    composite.save("graph_structure_gpt5_nano.png")
+    print("Combined image saved to graph_structure_gpt5_nano.png")
 else:
     print("No images found to combine.")

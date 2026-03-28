@@ -8,8 +8,8 @@ class TesterNode:
         self.llm = get_llm(effort_level)
         self.modifier = get_system_prompt_modifier(effort_level)
         self.prompt = ChatPromptTemplate.from_messages([
-            ("system", "You are the Tester. Look at the execution trace and isolate any runtime errors. Identify what went wrong with the logic." + self.modifier),
-            ("user", "Task:\n{task_description}\n\nCode:\n{code}\n\nExecution Trace:\n{trace}\n\nAnalyze the outcome.")
+            ("system", "You are the Tester. Look at the execution trace and isolate any runtime errors. Identify what went wrong with the logic. If review comments are provided, consider them in your analysis." + self.modifier),
+            ("user", "Task:\n{task_description}\n\nCode:\n{code}\n\nReviewer Comments (if any):\n{review_comments}\n\nExecution Trace:\n{trace}\n\nAnalyze the outcome.")
         ])
         
     def __call__(self, state: TaskState):
@@ -23,9 +23,11 @@ class TesterNode:
         passed, trace = run_tests_in_sandbox(code, tests)
         
         # 2. LLM Analysis
+        review_comments = "\n".join(state.get("review_comments", []))
         result = chain.invoke({
             "task_description": task_desc,
             "code": code,
+            "review_comments": review_comments,
             "trace": trace
         })
         

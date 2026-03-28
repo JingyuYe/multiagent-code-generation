@@ -1,0 +1,12 @@
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-426", "passed": false, "tokens": 104, "stability": {"universal_agent": true}}
+{"topology": "G0: Baseline (0-shot)", "task_id": "MBPP-229", "passed": false, "tokens": 94, "stability": {"universal_agent": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-426", "passed": true, "tokens": 1265, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G1: Waterfall (Linear)", "task_id": "MBPP-229", "passed": false, "tokens": 1219, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-426", "passed": true, "tokens": 702, "stability": {"planner": true, "coder": true, "tester": true}}
+{"topology": "G2: AgentCoder (Loop)", "task_id": "MBPP-229", "passed": false, "tokens": 1701, "stability": {"planner": true, "coder": true, "tester": false}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-426", "passed": true, "tokens": 1005, "stability": {"planner": true, "coder": true, "reviewer": true, "tester": true}}
+{"topology": "G3: MapCoder (Cycle)", "task_id": "MBPP-229", "passed": false, "tokens": 3720, "stability": {"planner": false, "coder": true, "reviewer": false, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-426", "passed": true, "tokens": 3274, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
+{"topology": "G4: Parallel Judge", "task_id": "MBPP-229", "passed": false, "tokens": 6055, "stability": {"planner": true, "coder": true, "judge": true, "tester": true}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-426", "passed": true, "tokens": 4717, "stability": {"planner": true, "coder": true, "red_team": false, "blue_team": true, "tester": true}}
+{"topology": "G5: Adversarial Debate", "task_id": "MBPP-229", "passed": false, "tokens": 6288, "stability": {"planner": true, "coder": true, "red_team": false, "blue_team": false, "tester": true}}

@@ -38,6 +38,6 @@ def build_g2_agentcoder(effort_profile: dict = None):
     builder.add_edge("Coder", "Tester")
     
     # Conditional edge to loop back to Coder on failure
-    builder.add_conditional_edges("Tester", should_continue)
+    builder.add_conditional_edges("Tester", should_continue, path_map={"Coder": "Coder", END: END})
     
     return builder.compile()

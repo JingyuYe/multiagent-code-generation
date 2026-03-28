@@ -3,7 +3,7 @@
 ## 1. System Overview
 The system is designed to orchestration multi-agent coding workflows, execute generated code against the MBPP benchmark, and analyze the results using Cooperative Game Theory metrics (Shapley Values and Utility/Nash Equilibriums). 
 
-The implementation will heavily rely on **LangGraph** for flexible orchestration of different graph topologies and **LangChain** or **OpenAI SDK** to interface with instances of `gpt-4o`.
+The implementation relies on **LangGraph** for flexible orchestration of different graph topologies and **LangChain**/**OpenAI SDK** to interface with **GPT-5.4 Nano** (primary) and Ollama's local `qwen2.5-coder:7b` (offline fallback).
 
 ## 2. Core Components
 
@@ -26,11 +26,16 @@ Because the foundation model (GPT-4o) remains fixed without fine-tuning, effort 
   - 0-shot generation logic.
 
 ### 2.3 Graph Topologies (LangGraph StateGraphs)
-We will implement four discrete `StateGraph` configurations:
+We implement nine discrete `StateGraph` configurations:
 - **G0: Single-Agent Baseline**: Uses a single Universal Agent mapping `input -> output` with optional self-check.
 - **G1: Waterfall Pipeline**: Strictly linear sequential flow: `Task -> PL -> C -> R -> T -> Output`.
 - **G2: AgentCoder-Style Loop**: Iterative flow branching at Tester: `Task -> C <---> T`. Loops until tests pass or `$K$` cycles are exhausted.
-- **G3: MapCoder-Style Cycle**: Complex cyclic flow incorporating retrieval/planning, coding, and debugging with rich feedback across components under fixed token budgets.
+- **G2.5: Reviewer Repair**: Extends G2 by routing test failures through a Reviewer for static analysis before cycling back to Coder: `Tester -> Reviewer -> Coder`.
+- **G3: MapCoder-Style Cycle**: Complex cyclic flow where test failures trigger a complete re-plan originating at the Planner, incorporating reviewer comments.
+- **G4: Parallel Judge (Best-of-N)**: Three parallel Coders produce candidates, a Judge selects the best, forwarded to Tester.
+- **G5: Adversarial Debate**: A Red Team attacks the code and a Blue Team defends/patches it before testing.
+- **G6: Hierarchical Setup**: A Manager decomposes the task into sub-tasks assigned to parallel Workers, aggregated by an Aggregator.
+- **G7: Mental Simulator**: A Simulator node mentally traces execution before the Tester runs real tests.
 
 ## 3. Evaluation & Execution Engine
 
@@ -38,8 +43,8 @@ We will implement four discrete `StateGraph` configurations:
 Load the MBPP dataset using the `datasets` library. Filter to a representative, computationally feasible subset for Shapley Value Monte-Carlo approximations to save API costs.
 
 ### 3.2 Secure Code Execution Environment
-- Create a local sandbox (or lightweight Docker container) to execute python code strings alongside their MBPP-provided `assert` unit tests.
-- Capture `stdout`, `stderr`, and runtime exceptions to feed backward into iterative topologies (G2, G3).
+- Execute generated Python code via `subprocess.run()` with a hard 5-second timeout, writing to a temp file to isolate infinite loops and segfaults.
+- Capture `stdout`, `stderr`, and runtime exceptions to feed backward into iterative topologies (G2, G2.5, G3).
 - Return binary outcome $Y \in \{\text{pass}, \text{fail}\}$.
 
 ### 3.3 Token & Cost Tracing
@@ -63,7 +68,8 @@ To test if high-effort profile $e^* = (1,1,1,1)$ is an approximate Nash equilibr
 - **Monte Carlo Permutation**: Because evaluating all subset permutations $2^N$ might be expensive across MBPP, use Monte Carlo sampling of agent arrival permutations $\pi$ to calculate marginal contributions $\phi_i(g)$.
 
 ## 5. Development Phases
-1. **Phase 1: Foundations**: Implement Agent Prompts, Effort Modulation, Execution Sandbox, and MBPP loader.
-2. **Phase 2: Graph Topologies**: Build G0, G1, G2, G3 using LangGraph and verify basic pass@1 performance.
-3. **Phase 3: Tracing & Utilities**: Add callback systems to log token consumption and measure Utility functions.
-4. **Phase 4: Game Theory Evaluation**: Implement empirical best-response iteration and Shapley Monte-Carlo permutation sweeps.
+1. **Phase 1: Foundations** ✅: Implement Agent Prompts, Effort Modulation, Execution Sandbox, and MBPP loader.
+2. **Phase 2: Graph Topologies** ✅: Build G0 through G7 (including G2.5) using LangGraph and verify basic pass@1 performance.
+3. **Phase 3: Tracing & Utilities** ✅: Add callback systems to log token consumption and measure Utility functions.
+4. **Phase 4: Game Theory Evaluation** ✅: Implement empirical best-response iteration and Shapley Monte-Carlo permutation sweeps.
+5. **Phase 5: Bug Fixes & Validation** ✅: Fixed critical bug where `review_comments` were generated but silently dropped before reaching Coder/Planner/Tester nodes. Reran affected topologies (G1, G2.5, G3) on the full 50-task evaluation set.

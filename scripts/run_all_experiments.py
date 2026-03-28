@@ -15,6 +15,7 @@ from datasets import load_dataset
 from src.graphs.g0_baseline import build_g0_baseline
 from src.graphs.g1_waterfall import build_g1_waterfall
 from src.graphs.g2_agentcoder import build_g2_agentcoder
+from src.graphs.g2_5_reviewer_repair import build_g2_reviewer_repair
 from src.graphs.g3_mapcoder import build_g3_mapcoder
 from src.graphs.g4_parallel_judge import build_g4_parallel_judge
 from src.graphs.g5_adversarial_debate import build_g5_adversarial_debate
@@ -41,7 +42,7 @@ def create_task_input(task_id, prompt, tests):
 def load_existing_results():
     """Reads raw_results.jsonl and returns a nested dict {topology: {task_id: result_obj}}."""
     results = {}
-    raw_results_file = Path("data/raw_results.jsonl")
+    raw_results_file = Path("data/raw_results_gpt5_nano.jsonl")
     if raw_results_file.exists():
         with open(raw_results_file, "r") as f:
             for line in f:
@@ -110,7 +111,7 @@ def evaluate_task(row, builder_func, graph_name, roles, base_profile, console):
         }
         
         # Stream result to disk safely (appended)
-        raw_results_file = Path("data/raw_results.jsonl")
+        raw_results_file = Path("data/raw_results_gpt5_nano.jsonl")
         with open(raw_results_file, "a") as f:
             f.write(json.dumps(result_obj) + "\n")
             
@@ -148,11 +149,12 @@ def run_all_experiments():
         "G0: Baseline (0-shot)": {"builder": build_g0_baseline, "roles": ["universal_agent"]},
         "G1: Waterfall (Linear)": {"builder": build_g1_waterfall, "roles": ["planner", "coder", "reviewer", "tester"]},
         "G2: AgentCoder (Loop)": {"builder": build_g2_agentcoder, "roles": ["planner", "coder", "tester"]},
+        "G2.5: Reviewer Repair": {"builder": build_g2_reviewer_repair, "roles": ["planner", "coder", "reviewer", "tester"]},
         "G3: MapCoder (Cycle)": {"builder": build_g3_mapcoder, "roles": ["planner", "coder", "reviewer", "tester"]},
         "G4: Parallel Judge": {"builder": build_g4_parallel_judge, "roles": ["planner", "coder", "judge", "tester"]},
         "G5: Adversarial Debate": {"builder": build_g5_adversarial_debate, "roles": ["planner", "coder", "red_team", "blue_team", "tester"]},
         "G6: Hierarchical Setup": {"builder": build_g6_hierarchical, "roles": ["manager", "worker", "aggregator", "tester"]},
-        "G7: Mental Simulator": {"builder": build_g7_mental_simulator, "roles": ["planner", "coder", "simulator", "tester"]},
+        # "G7: Mental Simulator": {"builder": build_g7_mental_simulator, "roles": ["planner", "coder", "simulator", "tester"]},
     }
     
     # Store aggregated results
