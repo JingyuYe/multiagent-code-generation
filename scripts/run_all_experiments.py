@@ -44,7 +44,7 @@ def run_all_experiments():
     import random
     random.seed(42)
     
-    num_tasks = 30
+    num_tasks = 10
     console.print(f"Loading and sampling {num_tasks} tasks with varied difficulty from MBPP Sanitzed dataset...")
     full_dataset = load_dataset("mbpp", "sanitized", split="test")
     
@@ -57,11 +57,11 @@ def run_all_experiments():
         easy = num_tasks - hard - med
         # Biased sample: 60% hardest, 20% median, 20% easiest
         dataset = sorted_dataset[-hard:] + sorted_dataset[len(sorted_dataset)//2 - med//2 : len(sorted_dataset)//2 - med//2 + med] + sorted_dataset[:easy]
+        random.shuffle(dataset)
+        dataset = dataset[start_index:start_index + num_tasks]
         start_index = 10
         num_tasks = 20
 
-        dataset = dataset[start_index:start_index + num_tasks]
-        random.shuffle(dataset)
     else:
         dataset = sorted_dataset
     
