@@ -16,28 +16,31 @@
 \title{Graph Topologies and Incentive Stability in Multi-Agent Code Generation}
 
 \author{Nana Ye}
+\authornote{All authors contributed equally to this research.}
 \affiliation{%
-  \institution{Institution Name}
-  \city{City}
-  \country{Country}
+  \institution{University of Waterloo}
+  \city{Waterloo}
+  \country{Canada}
 }
 \email{email@domain.com}
 
 \author{Charlotte Ma}
+\authornotemark[1]
 \affiliation{%
-  \institution{Institution Name}
-  \city{City}
-  \country{Country}
+  \institution{University of Waterloo}
+  \city{Waterloo}
+  \country{Canada}
 }
 \email{email@domain.com}
 
 \author{Jason Liu}
+\authornotemark[1]
 \affiliation{%
-  \institution{Institution Name}
-  \city{City}
-  \country{Country}
+  \institution{University of Waterloo}
+  \city{Waterloo}
+  \country{Canada}
 }
-\email{email@domain.com}
+\email{mx5liu@uwaterloo.ca}
 
 \renewcommand{\shortauthors}{Ye, Ma, and Liu}
 
@@ -78,6 +81,7 @@ To answer that question, we complement benchmark evaluation with a game-theoreti
 Our central claim is that interaction topology should be studied not only as an architectural choice, but also as an incentive mechanism. A graph determines where verification occurs, who bears its token cost, and how strongly an agent can rely on others to catch errors later. By jointly measuring pass@1, token usage, and contribution/incentive patterns, this paper aims to move the study of multi-agent code generation from pipeline-level comparison toward a more controlled and explanatory analysis of why some structures work better than others. We define utility as the balance between task success and cost of tokens of effort, and we use it to determine whether a graph structure supports an approximate Nash Equilibrium where all agents are incentivized to perform high effort verification under constrained compute costs (Shoham \& Leyton-Brown, 2008).
 
 Our main contributions are:
+\vspace{-0.5em}
 \begin{enumerate}
     \item We introduce a controlled experimental framework for analyzing multi-agent code generation in which interaction topology is isolated as the principal design variable, while models, MBPP tasks, and role prompts are kept fixed across graph families.
     \item We cast multi-agent code generation in a game-theoretic framework by defining agent utility as a shared task-success reward minus individual token expenditure, and we operationalize incentive stability through empirical $\varepsilon$-Nash-style deviation tests together with Shapley-value-based contribution analysis.
